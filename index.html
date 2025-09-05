@@ -48,6 +48,7 @@
 				font-size: 14px;
 				color: #aaa;
 			}
+
 			@media screen and (max-width: 750px) {
 				body {
 					width: 100%;
@@ -61,8 +62,14 @@
 					position: relative;
 					right: 100px;
 				}
-				nav .menu img {
+				nav .menu .img {
 					display: block;
+				}
+				.img-bar {
+					width: 35px;
+					height: 5px;
+					background-color: black;
+					margin: 4px 0;
 				}
 
 				.navLi {
@@ -90,13 +97,11 @@
 			<nav>
 				<h1>EM DEGREE TRACKER</h1>
 				<div class="menu">
-					<img
-						src="img/menu.png"
-						alt="menu"
-						width="25"
-						height="25"
-						class="img"
-					/>
+					<div class="img">
+						<div class="img-bar"></div>
+						<div class="img-bar"></div>
+						<div class="img-bar"></div>
+					</div>
 					<ul class="ulLi navLi">
 						<li><a href="./index.html">Terms of Use</a></li>
 						<li>
