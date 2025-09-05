@@ -5,18 +5,109 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Privacy Policy</title>
 		<style>
+			body {
+				width: 70%;
+				margin: auto;
+			}
+			nav {
+				display: flex;
+				justify-content: space-between;
+			}
 			.ulLi {
 				list-style-type: none;
+			}
+			.navLi {
+				display: flex;
+				flex-direction: row;
+				gap: 20px;
+			}
+			.navLi li:hover {
+				background-color: #bcdded;
+				padding: 5px;
+			}
+			.navLi li {
+				padding: 5px;
+				border-radius: 5px;
+			}
+			.navLi li a {
+				text-decoration: none;
+			}
+			.menu {
+				display: flex;
+				align-items: center;
+			}
+			.menu img {
+				display: none;
+			}
+			/* .footer-bottom {
+				display: flex;
+				justify-content: center;
+			} */
+
+			.footer-bottom {
+				text-align: center;
+				margin-top: 20px;
+				border-top: 1px solid #444;
+				padding-top: 10px;
+				font-size: 14px;
+				color: #aaa;
+			}
+			@media screen and (max-width: 750px) {
+				body {
+					width: 100%;
+					padding: 10px;
+				}
+				nav {
+					align-items: center;
+				}
+				nav .menu {
+					display: block;
+					position: relative;
+					right: 100px;
+				}
+				nav .menu img {
+					display: block;
+				}
+
+				.navLi {
+					display: none;
+					padding: 0;
+					margin: 0;
+					list-style: none;
+					position: absolute;
+					background-color: #a4d2e9;
+					width: fit-content;
+				}
+				nav .menu:hover .navLi {
+					display: block;
+					background-color: rgb(165, 193, 241);
+				}
+
+				.navLi li {
+					width: 120px;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<div>
 			<nav>
-				<ul class="ulLi">
-					<li><a href="./index.html">Terms of Use</a></li>
-					<li><a href="./privacyPolicy.html">Privacy Policy</a></li>
-				</ul>
+				<h1>EM DEGREE TRACKER</h1>
+				<div class="menu">
+					<img
+						src="img/bars-solid-full.svg"
+						alt="menu"
+						width="25"
+						height="25"
+						class="img"
+					/>
+					<ul class="ulLi navLi">
+						<li><a href="./index.html">Terms of Use</a></li>
+						<li>
+							<a href="./privacyPolicy.html">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 		<div>
@@ -253,10 +344,11 @@
 
 			<p>
 				<strong>Related Documents:</strong>
-				<a href="./index.html"
-					>Terms of Use</a
-				>
+				<a href="./index.html">Terms of Use</a>
 			</p>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2025 Emdidi Studio. All rights reserved.</p>
 		</div>
 	</body>
 </html>
